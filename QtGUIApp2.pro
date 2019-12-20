@@ -25,6 +25,10 @@ HEADERS += \
 FORMS += \
     mainwindow.ui
 
+# added by AoB, for EmployeeDB:
+INCLUDEPATH += ../headers
+LIBS += -L../libraries -lEmployeeDBLib
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
